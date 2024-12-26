@@ -1,5 +1,5 @@
 {% set name = "periscope" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/anishathalye/periscope/archive/v{{ version }}.tar.gz
-  sha256: 1b2b02ce863af112f1abf80fc24b2837ff6a085a7a189109ea2b4e508206694b
+  sha256: 27a7eb749203f1d6be6cb30c6890c4c0a263786a942f6886a2de8c7939d22501
 
 build:
   number: 0
