@@ -2,7 +2,7 @@
 
 set -o xtrace -o nounset -o pipefail -o errexit
 
-go build -buildmode=pie -trimpath -o=${PREFIX}/bin/psc -ldflags="-s -w -X main.version=${PKG_VERSION}" ./cmd/psc
+go build -o=${PREFIX}/bin/psc -ldflags="-s -w -X main.version=${PKG_VERSION}" ./cmd/psc
 go-licenses save ./cmd/psc --save_path=license-files --ignore github.com/anishathalye/periscope
 
 if [[ ${build_platform} == ${target_platform} ]]; then
